@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scanllion — Architecture & Design Studio</title>
+  <meta name="description" content="Scanllion is an architecture and design studio creating considered residential, commercial and civic spaces." />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="logo" aria-label="Scanllion home">
+        <span class="logo-mark" aria-hidden="true"></span>
+        SCANLLION
+      </a>
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="#studio">Studio</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#contact" class="nav-cta">Start a project</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">Architecture · Interiors · Urban Design</p>
+          <h1 class="hero-title reveal">
+            Spaces shaped by <em>light</em>,<br />
+            built for <em>life</em>.
+          </h1>
+          <p class="hero-lead reveal">
+            Scanllion is an architecture studio designing homes, workplaces and public
+            buildings that are calm, enduring and deeply rooted in their context.
+          </p>
+          <div class="hero-actions reveal">
+            <a href="#projects" class="btn btn-primary">View our work</a>
+            <a href="#contact" class="btn btn-ghost">Get in touch</a>
+          </div>
+        </div>
+        <figure class="hero-media reveal">
+          <img src="assets/img/court1.JPG" alt="Architectural rendering of a modern building facade" />
+          <figcaption>Featured — Courtyard House</figcaption>
+        </figure>
+      </div>
+      <div class="container hero-stats">
+        <div class="stat reveal"><span class="stat-num" data-count="120">0</span><span class="stat-plus">+</span><p>Projects completed</p></div>
+        <div class="stat reveal"><span class="stat-num" data-count="15">0</span><span class="stat-plus">+</span><p>Years of practice</p></div>
+        <div class="stat reveal"><span class="stat-num" data-count="24">0</span><p>Design awards</p></div>
+        <div class="stat reveal"><span class="stat-num" data-count="9">0</span><p>Cities worldwide</p></div>
+      </div>
+    </section>
+
+    <!-- ============ STUDIO ============ -->
+    <section class="section studio" id="studio">
+      <div class="container studio-grid">
+        <div>
+          <p class="eyebrow reveal">01 — The Studio</p>
+          <h2 class="section-title reveal">We design with restraint, so that what matters can stand out.</h2>
+        </div>
+        <div class="studio-copy">
+          <p class="reveal">
+            Founded on the belief that good architecture is quietly transformative,
+            Scanllion brings together architects, interior designers and planners who
+            share a passion for craft. Every project begins with listening — to our
+            clients, to the site, and to the people who will live with the building
+            long after we're gone.
+          </p>
+          <p class="reveal">
+            We favour honest materials, natural light and clear, generous plans. The
+            result is architecture that feels inevitable: precise in its detail,
+            sustainable in its performance, and timeless in its character.
+          </p>
+          <ul class="values reveal">
+            <li><strong>Context first.</strong> Each building responds to its climate, culture and landscape.</li>
+            <li><strong>Sustainable by design.</strong> Passive strategies and low-carbon materials as standard.</li>
+            <li><strong>Crafted detail.</strong> We stay involved from first sketch to final handover.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow reveal">02 — Selected Work</p>
+            <h2 class="section-title reveal">Projects</h2>
+          </div>
+          <div class="filters reveal" role="tablist" aria-label="Filter projects">
+            <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="filter" data-filter="residential" role="tab" aria-selected="false">Residential</button>
+            <button class="filter" data-filter="commercial" role="tab" aria-selected="false">Commercial</button>
+            <button class="filter" data-filter="cultural" role="tab" aria-selected="false">Cultural</button>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <article class="project project--wide reveal" data-category="residential">
+            <div class="project-media"><img src="assets/img/court.JPG" alt="Courtyard House exterior" loading="lazy" /></div>
+            <div class="project-info">
+              <h3>Courtyard House</h3>
+              <p>Residential · 2025</p>
+            </div>
+          </article>
+          <article class="project reveal" data-category="commercial">
+            <div class="project-media"><img src="assets/img/merrid.JPG" alt="Meridian Offices tower" loading="lazy" /></div>
+            <div class="project-info">
+              <h3>Meridian Offices</h3>
+              <p>Commercial · 2024</p>
+            </div>
+          </article>
+          <article class="project reveal" data-category="cultural">
+            <div class="project-media"><img src="assets/img/river.JPG" alt="Riverside Library arches" loading="lazy" /></div>
+            <div class="project-info">
+              <h3>Riverside Library</h3>
+              <p>Cultural · 2024</p>
+            </div>
+          </article>
+          <article class="project reveal" data-category="residential">
+            <div class="project-media"><img src="assets/img/hillside.JPG" alt="Hillside Villa terraces" loading="lazy" /></div>
+            <div class="project-info">
+              <h3>Hillside Villa</h3>
+              <p>Residential · 2023</p>
+            </div>
+          </article>
+          <article class="project project--wide reveal" data-category="commercial">
+            <div class="project-media"><img src="assets/img/atrium.JPG" alt="Atrium Market Hall" loading="lazy" /></div>
+            <div class="project-info">
+              <h3>Atrium Market Hall</h3>
+              <p>Commercial · 2023</p>
+            </div>
+          </article>
+          <article class="project reveal" data-category="cultural">
+            <div class="project-media"><img src="assets/img/pavil.JPG" alt="Pavilion of Light" loading="lazy" /></div>
+            <div class="project-info">
+              <h3>Pavilion of Light</h3>
+              <p>Cultural · 2022</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section services" id="services">
+      <div class="container">
+        <p class="eyebrow reveal">03 — What We Do</p>
+        <h2 class="section-title reveal">Services</h2>
+        <div class="service-list">
+          <details class="service reveal" open>
+            <summary><span class="service-num">01</span><span class="service-name">Architecture</span><span class="service-icon" aria-hidden="true"></span></summary>
+            <p>Full architectural services for new builds, extensions and adaptive reuse — from feasibility and concept design through planning, technical drawings and construction.</p>
+          </details>
+          <details class="service reveal">
+            <summary><span class="service-num">02</span><span class="service-name">Interior Design</span><span class="service-icon" aria-hidden="true"></span></summary>
+            <p>Cohesive interiors that extend the architecture inward: spatial planning, joinery, lighting, material and furniture selection.</p>
+          </details>
+          <details class="service reveal">
+            <summary><span class="service-num">03</span><span class="service-name">Urban Planning</span><span class="service-icon" aria-hidden="true"></span></summary>
+            <p>Masterplans and public-realm strategies that create walkable, mixed-use neighbourhoods with lasting community value.</p>
+          </details>
+          <details class="service reveal">
+            <summary><span class="service-num">04</span><span class="service-name">Landscape</span><span class="service-icon" aria-hidden="true"></span></summary>
+            <p>Gardens, courtyards and landscapes designed in dialogue with the building, using native planting and sustainable water management.</p>
+          </details>
+          <details class="service reveal">
+            <summary><span class="service-num">05</span><span class="service-name">Project Management</span><span class="service-icon" aria-hidden="true"></span></summary>
+            <p>Contract administration and site supervision to make sure the design intent is delivered on time, on budget and to the highest standard.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="section process" id="process">
+      <div class="container">
+        <p class="eyebrow reveal">04 — How We Work</p>
+        <h2 class="section-title reveal">Our process</h2>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-num">01</span>
+            <h3>Discover</h3>
+            <p>We study the brief, the site and your aspirations to define what success looks like.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">02</span>
+            <h3>Concept</h3>
+            <p>Sketches, models and visualisations explore options and set a clear design direction.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">03</span>
+            <h3>Develop</h3>
+            <p>We refine the design, secure approvals and produce detailed technical documentation.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">04</span>
+            <h3>Deliver</h3>
+            <p>We work alongside builders on site until every detail is realised as intended.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIAL ============ -->
+    <section class="section quote-section">
+      <div class="container">
+        <blockquote class="quote reveal">
+          <p>“Scanllion listened in a way no other firm did. The house they designed for us feels like it has always belonged on that hillside.”</p>
+          <footer>— Client, Hillside Villa</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow reveal">05 — Contact</p>
+          <h2 class="section-title reveal">Let's build something lasting.</h2>
+          <p class="reveal contact-lead">Tell us about your project and we'll get back to you within two working days.</p>
+          <dl class="contact-details reveal">
+            <div><dt>Email</dt><dd><a href="mailto:hello@scanllion.com">hello@scanllion.com</a></dd></div>
+            <div><dt>Phone</dt><dd><a href="tel:+10000000000">+1 (000) 000-0000</a></dd></div>
+            <div><dt>Studio</dt><dd>123 Design Street<br />Lagos, Nigeria</dd></div>
+          </dl>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="type">Project type</label>
+            <select id="type" name="type">
+              <option>Residential</option>
+              <option>Commercial</option>
+              <option>Cultural / Public</option>
+              <option>Interior</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Tell us about your project</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send enquiry</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#top" class="logo"><span class="logo-mark" aria-hidden="true"></span>SCANLLION</a>
+      <p>Architecture & Design Studio</p>
+      <nav class="social" aria-label="Social">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Pinterest">Pinterest</a>
+      </nav>
+      <p class="copyright">© <span id="year"></span> Scanllion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
